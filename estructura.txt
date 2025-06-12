@@ -1,0 +1,12 @@
+proyecto/
+|--- .venv
+|--- models/
+|-------> activo_financiero.py
+|--- services/
+|-------> activo_financiero_servicio.py
+|--- reportes/
+| ------> generador_reporte.py
+|
+|
+|
+|--- main.py

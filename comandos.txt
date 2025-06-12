@@ -1,0 +1,5 @@
+Posterior a hacer un git clone
+-> py -m venv .venv  
+-> .venv\Scripts\activate
+-> pip install -r requirements.txt
+

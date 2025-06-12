@@ -50,7 +50,7 @@ coche_2 = Coche("Peugeot", "308", "Rojo")
 # coche_1.acelerar()
 # coche_2.acelerar()
 
-Coche.incrementar_ruedas()
+# Coche.incrementar_ruedas()
 
 # print("Primer coche:")
 # print(coche_1.marca)
@@ -64,4 +64,4 @@ Coche.incrementar_ruedas()
 # print(coche_2.color)
 # print(coche_2.ruedas)
 
-print(coche_2)
+# print(coche_2)

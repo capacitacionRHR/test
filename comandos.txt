@@ -1,8 +1,0 @@
-Posterior a hacer un git clone
--> py -m venv .venv  
--> .venv\Scripts\activate
--> pip install -r requirements.txt
-
-->.env.example hago copia , pego a la misma altura, y lo dejo con el nombre .env, luego le agrego los valores
-
-

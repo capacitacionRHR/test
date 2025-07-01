@@ -1,29 +1,43 @@
-from paquete.sistema import Sistema
+from models.departamentos import agregar_departamento, eliminar_departamento, listar_departamentos
+from models.empleados import agregar_empleado, listar_empleados
 
-sistema = Sistema()
 
-while True:
+def menu():
+    while True:
 
-    sistema.mostrar_menu()
+        print("\n---Sistema de Gestion de empleados y dptos ---")
+        print("1. Agregar Empleado")
+        print("2. Listar Empleados")
+        print("3. Agregar DPTO")
+        print("4. Listar DPTOs")
+        print("5. Eliminar Dpto")
+        print("6. Salir")
 
-    opcion = input("Seleccione una opcion (1-6): ")
+        opcion = input("Seleccione una opcion: ")
 
-    if opcion == "1":
-        sistema.ver_transacciones()
-    elif opcion == "2":
-        sistema.agregar_transaccion()
-    elif opcion == "3":
-        sistema.validar_transacciones()
-    elif opcion == "4":
-        print("Saliendo del sistema. Gracias por utilizar nuestro servicio!")
-        break
-    elif opcion == "5":
-        ruta= input("Ingrese la ruta del archivo CSV: ")
-        sistema.importar_csv(ruta)
-    elif opcion == "6":
-        ruta = input("Ingrese una ruta donde guardar el CSV: ")
-        sistema.exportar_csv(ruta)
-    else:
-        print("Opción no válida. Intente nuevamente.") 
+        if opcion == "1":
+            nombre = input("Nombre: ")
+            email = input("Email: ")
+            salario = float(input("Salario: "))
+            fecha = input("Fecha ingreso (YYYY-MM-DD): ")
+            id_dpto = int(input("ID del departamento: "))
+            agregar_empleado(nombre,email,salario,fecha,id_dpto)
+        elif opcion == "2":
+            listar_empleados()
+        elif opcion == "3":
+            nombre = input("Nombre del departamento: ")
+            agregar_departamento(nombre)
+        elif opcion == "4":
+            listar_departamentos()
+        elif opcion == "5":
+            id = int(input("ID del departamento:"))
+            eliminar_departamento(id)
+        elif opcion == "6":
+            print("Hasta luego!")
+            break    
+        else:
+            print("Opcion no valida")
+        
 
-# Este es un comentario para probar nueva rama
+menu()
+               

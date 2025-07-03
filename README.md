@@ -35,8 +35,8 @@ bdo_gestion/
 ### 1. Clonar o descargar el repositorio
 
 ```bash
-git clone https://github.com/tuusuario/bdo_gestion.git
-cd bdo_gestion
+git clone https://github.com/capacitacionRHR/test.git
+cd <carpeta_que_se_crea>
 
 ---
 
